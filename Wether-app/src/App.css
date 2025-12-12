@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-color: #532f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(156, 163, 175), rgb(75, 85, 99), rgb(30, 64, 175));
+    box-shadow: 3px 0px 23px 13px rgba(63, 83, 55, 0.485) inset;
+
+}
+
+
+.img {
+    height: 200px;
+    width: 200px;
+}
+
+.box {
+    min-height: 400px;
+    width: 450px;
+    background-color: #ffffff37;
+    backdrop-filter: blur(50px);
+    border-radius: 5px;
+    box-shadow: 3px 0px 23px 13px rgba(62, 62, 62, 0.56) inset;
+    box-shadow: 3px 0px 23px 13px rgba(0, 0, 0, 0.237);
+
+}
+
+.searchbox {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    gap: 4px;
+
+    input {
+        width: 80%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        border: 1px solid transparent;
+    }
+
+    input:focus {
+        box-shadow: 1px 0px 6px 5px #5C6573 inset;
+    }
+
+    button {
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+.error {
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 1.5rem;
+}
+
+.userdata {
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+    .city {
+        font-size: 1.2rem;
+    }
+
+    .temp {
+        font-size: 1.1rem;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+.sundetail {
+    border-top: 1px solid rgba(0, 0, 0, 0.236);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+@media (max-width:700px) {
+    .box{
+        width: 95%;
+    }
+}
+
+@media (max-width:375px) {
+    .box {
+        flex-direction:row;
+    }
+    .searchbox{
+        padding: 10px;
+    }
+    .userdata{
+        margin-top: 5px;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+        .details{
+            width: 100%;
+            padding-left: 20px;
+            padding-top: 10px;
+            p{
+                width: 100%;
+            }
+        }
+    }
+    .sundetail{
+        margin-top: 10px;
+    }
+}
