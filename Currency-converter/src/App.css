@@ -1,0 +1,61 @@
+body {
+  background: #0f172a;
+  color: white;
+  font-family: sans-serif;
+}
+
+.main {
+  max-width: 380px;
+  margin: 80px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+.handleCurrencys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.currency-box {
+  flex: 1;
+
+}
+
+.select,
+.inputvalue {
+  width: 90%;
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.arrow {
+  width: 32px;
+  cursor: pointer;
+  margin-top: 35px;
+  padding-right: 5px;
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background: #22c55e;
+  color: black;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 12px;
+  text-align: center;
+}
+.btn{
+  width: 95%;
+}
